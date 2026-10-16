@@ -197,64 +197,287 @@ button {
   color: white;
 } */
  
-body {
-  background-color: white;
+/* body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  padding: 20px;
+  background-color: #f8f5ff;
 }
 
-#root > div {
-  width: 90%;
-  margin: auto;
+.container {
+  padding: 20px;
+  text-align: center;
 }
 
-#root > div > div {
-  background-color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 2px solid lavender;
-  border-radius: 10px;
+h1 {
+  color: #7456a6;
+}
 
+.products {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #e5d9f2;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #333;
+}
+
+.card p {
+  color: #7456a6;
+  font-weight: bold;
+}
+
+button {
+  background-color: #b39ddb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9575cd;
+} */
+
+/* .search-box {
+  padding: 8px;
+  margin: 10px 0;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.spinner {
+  font-size: 18px;
+  color: #007bff;
+  margin: 20px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 20px;
+} */
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f5ff;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #7456a6;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #e5d9f2;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #333;
+}
+
+.card p {
+  color: #7456a6;
+  font-weight: bold;
+}
+
+button {
+  background-color: #b39ddb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #9575cd;
+}
+
+/* 🔍 Search Box */
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f5ff;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #7456a6;
 }
 
 h2 {
-  grid-column: span 2;
-  background-color: lavender;
-  color: #6a5acd;
-  text-align: center;
-  padding: 12px;
-  margin: 0;
-  border-radius: 5px;
+  color: #7456a6;
 }
 
-p {
-  background-color: #faf8ff;
-  padding: 12px;
-  margin: 0;
-  border: 1px solid lavender;
-  border-radius: 5px;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #e5d9f2;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 16px;
   color: #333;
-  overflow-wrap: anywhere;
+  cursor: pointer;
 }
 
-p:nth-of-type(3),
-p:nth-of-type(6) {
-  grid-column: span 2;
+.card p {
+  color: #7456a6;
+  font-weight: bold;
 }
 
-strong {
-  color: #6a5acd;
+button {
+  background-color: #b39ddb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9575cd;
+}
+
+.search {
+  width: 60%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #b39ddb;
+  border-radius: 5px;
+  margin-top: 15px;
+  outline-color: #9575cd;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #e5d9f2;
+  border-top: 5px solid #9575cd;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 30px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.status {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.details {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 1px solid #e5d9f2;
+  border-radius: 10px;
+}
+
+.details img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+.details h2 {
+  color: #7456a6;
+}
+
+.details p {
+  line-height: 1.6;
 }
 
 @media (max-width: 600px) {
-  #root > div > div {
-    grid-template-columns: 1fr;
-  }
-
-  h2, p {
-    grid-column: 1;
+  .search {
+    width: 90%;
   }
 }
+
